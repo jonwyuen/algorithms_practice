@@ -16,7 +16,7 @@ const longestFall = arr => {
 
   if (arr.length === 0) return 0;
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 1; i < arr.length; i++) {
     if (arr[i] < arr[i - 1]) {
       current++;
       longest = Math.max(current, longest);
